@@ -14,7 +14,7 @@ exports.obtenerTareaId = async (id) => {
 }
 exports.crearTarea = async (tarea) => {
     const response = await tareasRepository.crearTarea(tarea);
-    return response;w
+    return response;
 }
 exports.editarTarea = async (id,tarea) => {
     const exists = await tareasRepository.obtenerTareaId(id);
